@@ -1,6 +1,6 @@
 ## TSexp
 
-(TypeScript + Express) Node.JS boilerplate
+(TypeScript + Express) Node.js boilerplate
 
 ### Included libs
 
