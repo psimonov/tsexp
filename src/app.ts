@@ -1,11 +1,12 @@
-import { app } from './server';
 import bodyParser from 'body-parser';
+
+import { app } from './server';
 
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
   res.send({
-    test: "Hello, World!"
+    test: 'Hello, World!',
   });
 });
 
