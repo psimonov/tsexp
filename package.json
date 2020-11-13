@@ -1,8 +1,7 @@
 {
-  "name": "app",
-  "version": "1.0.0",
+  "name": "tsexp",
+  "version": "0.1.0",
   "private": true,
-  "main": "index.js",
   "scripts": {
     "start": "npm-run-all app:clear build app:start",
     "start:watch": "nodemon",
@@ -17,6 +16,7 @@
     "import-sort-style-module": "^6.0.0",
     "lint-staged": "^10.5.1",
     "nodemon": "^2.0.6",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2",
     "prettier-plugin-import-sort": "0.0.6",
     "rimraf": "^3.0.2",
@@ -25,8 +25,7 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "npm-run-all": "^4.1.5"
+    "express": "^4.17.1"
   },
   "husky": {
     "hooks": {
