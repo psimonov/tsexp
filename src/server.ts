@@ -1,12 +1,14 @@
 import express from 'express';
 
-const app = express();
+import { init } from './app';
+
+const server = express();
 const port = 3000;
 
-app.disable('x-powered-by');
+server.disable('x-powered-by');
 
-app.listen(port, () => {
+init(server);
+
+server.listen(port, () => {
   return console.log(`server is listening on ${port}`);
 });
-
-export { app };

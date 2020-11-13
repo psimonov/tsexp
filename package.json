@@ -7,7 +7,7 @@
     "start": "npm-run-all app:clear build app:start",
     "start:watch": "nodemon",
     "build": "tsc",
-    "app:start": "node dist/app.js",
+    "app:start": "node dist/server.js",
     "app:clear": "rimraf ./dist",
     "prettier": "prettier --write src/**/*.{js,ts,json,css,scss,md}"
   },
@@ -52,6 +52,7 @@
       ".git",
       "node_modules"
     ],
+    "delay": 3000,
     "watch": [
       "src"
     ],

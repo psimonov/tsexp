@@ -1,15 +1,17 @@
 import bodyParser from 'body-parser';
 
-import { app } from './server';
+const init = (app) => {
+  app.use(bodyParser.json());
 
-app.use(bodyParser.json());
-
-app.get('/', (req, res) => {
-  res.send({
-    test: 'Hello, World!',
+  app.get('/', (req, res) => {
+    res.send({
+      test: 'Hello, World!',
+    });
   });
-});
 
-app.use((err, req, res, next) => {
-  return console.error(err);
-});
+  app.use((err, req, res, next) => {
+    return console.error(err);
+  });
+};
+
+export { init };
